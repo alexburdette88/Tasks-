@@ -61,3 +61,25 @@ LineWidth<-2
 plot(seq(to=MaxMA,from=MinMA,length.out=nrow(nspeciesOverTime)),nspeciesOverTime[,2],xlim=c(MaxMA,MinMA),type="l",xlab="age(millions of years ago)",ylab="num. of species",col=Col_dino,lwd=LineWidth)
 lines(seq(to=MaxMA,from=MinMA, length.out=nrow(nspeciesOverTime2)),nspeciesOverTime2[,2],col=Col_mammal,lwd=LineWidth)
 legend("topleft",legend=c(Taxon,Taxon2),col=c(Col_dino,Col_mammal),bty="n",lwd=LineWidth)
+
+Taxon3<-"Insecta"
+MinMA<-45
+MaxMA<-180
+fossils3<-pbdb_occurrences(base_name=Taxon3, show=c("phylo","coords","ident"),min_ma=MinMA,max_ma=MaxMA)
+nspeciesOverTime3<-pbdb_richness(fossils3,rank="genus",temporal_extent=c(MaxMA,MinMA),res=Res)
+
+Taxon4<-"Branchiopoda"
+MinMA<-45
+MaxMA<-180
+fossils4<-pbdb_occurrences(base_name=Taxon4, show=c("phylo","coords","ident"),min_ma=MinMA,max_ma=MaxMA)
+nspeciesOverTime4<-pbdb_richness(fossils4,rank="genus",temporal_extent=c(MaxMA,MinMA),res=Res)
+
+par(mar=c(4,5,2,1),las=1,tck=-0.01,mgp=c(2.5,0.5,0))
+Col_Insecta<-Cols[length(Cols)]
+Col_Branchio<-Cols[1]
+LineWidth<-2
+plot(seq(to=MaxMA,from=MinMA,length.out=nrow(nspeciesOverTime3)),nspeciesOverTime3[,2],xlim=c(MaxMA,MinMA),type="l",xlab="age(millions of years ago)",ylab="num. of species",col=Col_Insecta,lwd=LineWidth)
+lines(seq(to=MaxMA,from=MinMA, length.out=nrow(nspeciesOverTime4)),nspeciesOverTime4[,2],col=Col_Branchio,lwd=LineWidth)
+legend("topleft",legend=c(Taxon3,Taxon4),col=c(Col_Insecta,Col_Branchio),bty="n",lwd=LineWidth)
+
+#I Hypothesis Insecta species flucuate much more due to the greater variablity in enviornment on land while branchiopoda stays very limited to a small amount of species over the period.
