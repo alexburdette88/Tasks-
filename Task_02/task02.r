@@ -29,7 +29,7 @@ head(beren3)
 write.csv(beren3,"beren_new.csv",quote=F,row.names=FALSE)
 
 #Question1: The first Hypothesis values dont correspond, the second hypothesis relationship is to vague.
-setwd()
+setwd("C:\\Users\\burde\\Desktop\\Evolution\\Tasks\\Task_02")
 beren3 <- read.csv("beren_new.csv", stringsAsFactor=F)
 
 Feeds<-which(beren3$event=="bottle")
@@ -66,7 +66,11 @@ setwd()
 beren3 <- read.csv("beren_new.csv", stringsAsFactor=F)
 
 unique(beren3$event)
-Solids <- which(beren3$event == "intro_solidfood")
+
+# Add a column to beren3 called nap durations
+beren3$duration <- (beren3$end_hour + beren3$end_minute/60) - (beren3$start_hour + beren3$start_minute/60)
+
+Solids <- which(beren3$event == "intro_solidfood_regularly")
 Age <- beren3[Solids, "age"]
 
 Naps <- which(beren3$event == "nap")
@@ -75,6 +79,20 @@ head(napData)
 
 youngNaps <- napData[which(napData$age < Age),]
 
+OldNaps<- napData[ which( napData$age > Age ), ]
+
+OldNaps
+nrow(OldNaps)
+head(youngNaps)
 
 
+c(mean(youngNaps$duration, na.rm=T), sd(youngNaps$duration, na.rm=T))
+c(mean(OldNaps$duration,na.rm=T), sd(OldNaps$duration, na.rm=T))
 
+par(las=1,mar=c(5,5,1,1),mgp=c(2,0.5,0),tck=-0.01)
+
+plot(x=youngNaps$age,y=youngNaps$duration, xlim=c(120,290))
+points(x=OldNaps$age, y=OldNaps$duration, col="red")
+
+
+plot(x=(age),y=(OldNaps$duration,youngNaps$duration),xlab="age in days",ylab="average duration of sleep")
