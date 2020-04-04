@@ -1,0 +1,22 @@
+Binomial classification ,Common name ,Mode of Reproduction ,Brood size (# of hatchling or neonates),Average hatchling mass (g),Average Temperature of Nests (°C),Average Temperature of Nests (°F),Average Male to Female Ratio during hatching events ,Approximate # of hatchlings born male ,Approximate # of hatchlings born female ,mean annual temperature (ºC),mean annual temperature (ºF),Temperature variation (+/- °C)
+Dermochelys coriacea 1998-2016,Leatherback ,Oviparous ,80,46.4,30.2,86.36,0.38,30.4,49.6,30.883,87.5894,2.64
+Dermochelys coriacea 1998-2008,,,80,48.5,30.1,86.18,0.45,36,44,29.741,85.5338,2.33
+Dermochelys coriacea 2008-2016,,,80,46.2,30.5,86.9,0.39,31.2,48.8,30.997,87.7946,2.66
+Chelonia mydas 1998-2016,Green ,Oviparous ,110,25.7,29.5,85.1,0.52,57.2,52.8,29.925,85.865,4.35
+Chelonia mydas 1998-2008,,,105,26.1,29.3,84.74,0.59,61.95,43.05,29.334,84.8012,1.95
+Chelonia mydas 2008-2016,,,110,25.4,29.7,85.46,0.51,56.1,53.9,30.124,86.2232,5.33
+Caretta caretta 1998-2016,Loggerhead ,Oviparous ,112.4,20.3,28.9,84.02,0.11,12.364,100.036,29.951,85.9118,1.91
+Caretta caretta 1998-2008,,,110,20.3,27.8,82.04,0.23,25.3,84.7,29.442,84.9956,1.5
+Caretta caretta 2008-2016,,,115,20.4,30.1,86.18,0.09,10.35,104.65,30.478,86.8604,2.43
+Natator depressus 1998-2016,Flatback,Oviparous ,50,18.6,29.6,85.28,0.59,29.5,20.5,30.214,86.3852,3.62
+Natator depressus 1998-2008,,,50,18.2,29.5,85.1,0.61,30.5,19.5,30.114,86.2052,4.2
+Natator depressus 2008-2016,,,50,19.7,30.5,86.9,0.54,27,23,32.178,89.9204,3.1
+Eretmochelys imbricata 1998-2016,Hawksbill ,Oviparous ,140,17.5,31.5,88.7,0.23,32.2,107.8,32.776,90.9968,2.44
+Eretmochelys imbricata 1998-2008,,,150,20.6,30.9,87.62,0.38,57,93,32.746,90.9428,2.55
+Eretmochelys imbricata 2008-2016,,,132,17.5,32.6,90.68,0.2,26.4,105.6,32.889,91.2002,3.55
+Lepidochelys kempii 1998-2016,Kemps,Oviparous ,102,18.9,30.8,87.44,0.39,39.78,62.22,31.384,88.4912,1.86
+Lepidochelys kempii 1998-2008,,,110,19.9,28.9,84.02,0.39,42.9,67.1,30.887,87.5966,1.22
+Lepidochelys kempii 2008-2016,,,100,18.3,31.4,88.52,0.37,37,63,31.442,88.5956,2.51
+Lepidochelys olivacea 1998-2016,Olive Ridley ,Oviparous ,105,10.2,32.1,89.78,0.17,17.85,87.15,33.225,91.805,3.97
+Lepidochelys olivacea 1998-2008,,,105,10.5,32.2,89.96,0.23,24.15,80.85,32.996,91.3928,3.12
+Lepidochelys olivacea 2008-2016,,,105,10.1,31.3,88.34,0.15,15.75,89.25,33.279,91.9022,4.23

@@ -1,5 +1,6 @@
 setwd("C:\\Users\\burde\\Desktop\\Evolution\\Tasks\\Project\\code")
-#Temperature dependent sex determination in species of the family Reptilia will be heavily influenced by climate change resulting in drift towards extinction or fixation in species with mutations that allow for temperature dependence to shift with the change in climate.
+#Temperature dependent sex determination in amniotes (x data) as a result of increasing temperatures (ydata)leads to significant male to female ratios in egg clutches 
+
 
 source("file:///C:/Users/burde/Desktop/Evolution/Tasks/Project/data/Effects%20of%20Incubation%20Temperature%20on%20Crocodiles%20and%20the%20Evolution%20of%20Reptilian%20Oviparity.pdf")
 
